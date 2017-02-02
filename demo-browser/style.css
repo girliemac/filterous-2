@@ -1,0 +1,282 @@
+/* Reset */
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+	display:block;
+}
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+html,
+body {
+	height: 100%;
+}
+body{
+  margin: 0;
+  font: 1.2em/1.3em 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', 'Roboto-Light', 'Roboto Light', 'Roboto', 'Segoe UI Web Light', 'Segoe UI Light', 'Segoe UI Web Regular', 'Segoe UI', Helvetica, Arial, sans-serif;
+  background: #443c34;
+  color: #fff;
+  padding: 0;
+}
+img {
+	border: 0;
+}
+a {
+	color: #72b809;
+}
+
+/* Base Styles */
+
+* {
+	-webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+header {
+	margin: 1em 1em 2em;
+	text-shadow: -1px -2px 0 #000;
+	text-align: center;
+}
+header h1 {
+	font-family: 'Life Savers';
+	font-weight: normal;
+	font-size: 36px;
+}
+footer {
+    padding: 3em 1em 1em;
+    font-size: 0.75em;
+    text-align: right;
+}
+*[hidden] {
+	display: none;
+}
+
+
+/* Photo */
+
+#photoFrame {
+	position: relative;
+}
+#photo {
+	width: 500px;
+	height: 500px;
+	object-fit: cover;
+}
+figure {
+	margin: 0;
+	text-align: center;
+}
+
+@media (min-width: 700px) {
+	#photoFrame {
+		padding-left: 90px;
+	}
+	header h1 {
+		font-size: 48px;
+	}
+	#originalPhoto, #filteredPhoto {
+		width: auto;
+		background: #111;
+		width: 500px;
+	}
+	figure {
+		text-align: left;
+		margin: 1em auto;
+		position: relative;
+		background-color: #fff;
+		width: 540px;
+		padding: 20px;
+		height: 610px;
+		vertical-align: bottom;
+		box-shadow: 2px 2px 8px rgba(0,0,0,0.6), inset 0 0 30px rgba(0,0,0,0.2);
+	}
+	figure::before,
+	figure::after {
+		content: "";
+		position: absolute;
+		background-color: #fff;
+		width: 540px;
+		height: 610px;
+		box-shadow: 2px 2px 8px rgba(0,0,0,0.6), inset 0 0 30px rgba(0,0,0,0.2);
+		-webkit-transform-origin: bottom left;
+		-moz-transform-origin: bottom left;
+		-ms-transform-origin: bottom left;
+		-o-transform-origin: bottom left;
+		transform-origin: bottom left;
+	}
+	figure::before {
+		top: 5px;
+		left: 5px;
+		z-index: -1;
+		-webkit-transform: rotate(2deg);
+		-moz-transform: rotate(2deg);
+		-ms-transform: rotate(2deg);
+		-o-transform: rotate(2deg);
+		transform: rotate(2deg);
+	}
+	figure::after {
+		top: 10px;
+		z-index: -2;
+		-webkit-transform: rotate(3deg);
+		-moz-transform: rotate(3deg);
+		-ms-transform: rotate(3deg);
+		-o-transform: rotate(3deg);
+		transform: rotate(3deg);
+	}
+	figcaption {
+		color: #333;
+		font-size: 1.8em;
+		line-height: 2;
+		padding: 10px;
+		text-align: center;
+		font-family: 'Homemade Apple', serif;
+		font-weight: 400;
+	}
+}
+
+/* Loader */
+
+#loader {
+  width: 200px;
+  height: 200px;
+  line-height: 200px;
+  background: rgba(0,0,0,0.5);
+  text-align: center;
+  color: #fff;
+  border-radius: 12px;
+  position: fixed;
+  left: 50%;
+  margin-left: -100px;
+  top: 50%;
+  margin-top: -100px;
+  z-index: 10;
+}
+
+/* Filter Effects */
+
+nav {
+	position: fixed;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  padding: .75em 0 .5em;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+#filterButtons {
+  text-align: center;
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  padding: 0 .5em;
+}
+.filter {
+  display: inline-block;
+  margin: 3px 8px;
+  border-radius: 8px;
+  box-shadow: inset 0 0 10px #000;
+  height: 72px;
+  width: 72px;
+  cursor: pointer;
+  background: url("images/fish-normal.jpg") no-repeat 0 0;
+  background-size: cover;
+}
+.filter:hover {
+	box-shadow: 0 0 12px #72b809;
+}
+.filter.clarendon {
+  background-image: url("images/fish-clarendon.jpg");
+}
+.filter.juno {
+  background-image: url("images/fish-juno.jpg");
+}
+.filter.lark {
+  background-image: url("images/fish-lark.jpg");
+}
+.filter.ludwig {
+  background-image: url("images/fish-ludwig.jpg");
+}
+.filter.gingham {
+  background-image: url("images/fish-gingham.jpg");
+}
+.filter.valencia {
+  background-image: url("images/fish-valencia.jpg");
+}
+.filter.xpro2 {
+  background-image: url("images/fish-xpro2.jpg");
+}
+.filter.lofi {
+  background-image: url("images/fish-lofi.jpg");
+}
+.filter.amaro {
+  background-image: url("images/fish-amaro.jpg");
+}
+.filter.brooklyn {
+	background-image: url('images/fish-brooklyn.jpg')
+}
+.filter.willow {
+  background-image: url("images/fish-willow.jpg");
+}
+
+.filter-tag {
+  color: #fff;
+  font-size: .8em;
+  text-shadow: 1px 1px 1px #000;
+  text-align: center;
+  padding-top: 58px;
+}
+
+/* More Photos */
+#more {
+	position: relative;
+	margin: 6em 1em 120px;
+}
+#more p {
+	margin: 0.5em 0 0.2em;
+	color: #fff;
+	opacity: 0.8;
+}
+#more p.error {
+	color: #ff4fff;
+	font-size: 0.85em;
+	font-weight: bold;
+}
+#more ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#more small {
+	display: inline;
+}
+#more input[type=text] {
+	font-size: 0.85em;
+	border: 0;
+  border-radius: 4px;
+  padding: 2px 5px;
+}
+#more input[type=file] {
+	border: 0;
+  border-radius: 4px;
+  padding: 2px 5px;
+  color: #fff;
+}
+
+@media (min-width: 960px) {
+	#more {
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 1em;
+	}
+	#more small {
+		display: block;
+	}
+}

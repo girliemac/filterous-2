@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Filterous 2 Demo</title>
+	<meta name="description" content="Filterous-2 Demo">
+  <meta name="author" content="Tomomi Imura  @girlie_mac">
+	<meta charset="utf-8">
+	<meta name="application-name" content="PhotoFilter 2 Demo">
+	<meta name="viewport" content="width=device-width">
+	<link href='//fonts.googleapis.com/css?family=Homemade+Apple|Life+Savers' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>filterous 2</h1>
+	</header>
+
+	<!-- Photo Preview -->
+	<section id="photoFrame">
+		<div id="loader" hidden="hidden">Processing...</div>
+		<figure>
+			<img id="photo" src="images/cats.jpg" alt="photo">
+			<figcaption id="caption">Kitties</figcaption>
+		</figure>
+	</section>
+
+	<nav>
+		<!-- Filter Effects -->
+		<section id="filterButtons">
+			<div id="normal" class="filter normal">
+				<div class="filter-tag">Normal</div>
+			</div>
+			<div id="clarendon" class="filter clarendon">
+				<div class="filter-tag">Clarendon</div>
+			</div>
+			<div id="juno" class="filter juno">
+				<div class="filter-tag">Juno</div>
+			</div>
+			<div id="lark" class="filter lark">
+				<div class="filter-tag">Lark</div>
+			</div>
+			<div id="ludwig" class="filter ludwig">
+				<div class="filter-tag">Ludwig</div>
+			</div>
+			<div id="gingham" class="filter gingham">
+				<div class="filter-tag">Gingham</div>
+			</div>
+			<div id="valencia" class="filter valencia">
+				<div class="filter-tag">Valencia</div>
+			</div>
+			<div id="xpro2" class="filter xpro2">
+				<div class="filter-tag">X-Pro II</div>
+			</div>
+			<div id="lofi" class="filter lofi">
+				<div class="filter-tag">Lo-Fi</div>
+			</div>
+			<div id="amaro" class="filter amaro">
+				<div class="filter-tag">Amaro</div>
+			</div>
+			<div id="brooklyn" class="filter brooklyn">
+				<div class="filter-tag">Brooklyn</div>
+			</div>
+			<div id="willow" class="filter willow">
+				<div class="filter-tag">Willow</div>
+			</div>
+		</section>
+	</nav>
+
+	<!-- More photos -->
+	<section id="more">
+		<ul>
+			<li><a id="cats" href="#cats">Cats</a> <small>CC0</small></li>
+			<li><a id="bubble" href="#bubble">Soap Bubble</a> <small>CC0</small></li>
+			<li><a id="sf" href="#sf">Bay Bridge</a> <small>CC0</small></li>
+			<li><a id="bride" href="#bride">Indian Bride</a> <small>CC BY-SA 3.0</small> <small>by Vik.ceo</small></li>
+			<li><a id="latte" href="#latte">Latte</a> <small>CC0</small></li>
+		</ul>
+		<p>or enter an image URL:</p>
+		<input type="text" placeholder="http://foo.com/cat.jpg">
+		<p class="error"></p>
+		<p>or upload from HD:</p>
+		<input type="file">
+	</section>
+
+
+	<script src="filterous2.min.js"></script>
+	<script src="app.js"></script>
+</body>
+</html>
