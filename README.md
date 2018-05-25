@@ -94,7 +94,8 @@ fs.readFile('input/leia.jpg', (err, buffer) => {
 
 ### Basic Usage for JavaScript on Browser
 
-Import an image object to `filterous` and render as HTML with `renderHtml`.
+Import an image (or canvas) object to `filterous` and render as HTML with `renderHtml`.
+Image object can be any of [CanvasImageSource](https://developer.mozilla.org/en-US/docs/Web/API/CanvasImageSource).
 
 ```javascript
 filterous.importImage(imgObj, options)
