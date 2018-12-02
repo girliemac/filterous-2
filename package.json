@@ -26,6 +26,6 @@
     "mocha": "^3.2.0"
   },
   "dependencies": {
-    "canvas": "^1.6.2"
+    "canvas": "2.1.0"
   }
 }
