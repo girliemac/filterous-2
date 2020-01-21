@@ -134,7 +134,7 @@ Most effects take a value (the amount of the effects) between -1 and 1.
 for example, the value for the `brightness()` 0 means unchanged, -1 darkens the image, and 1 means full-brightness. The image will turn almost completely white.
 
 
-| Effect        | Adjestment(s)                   |
+| Effect        | Adjustment(s)                   |
 | ------------- | ------------------------------- |
 | `grayscale`   | N/A                             |
 | `sepia`       | 0 to 1                          |
