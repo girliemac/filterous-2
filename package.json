@@ -1,6 +1,6 @@
 {
   "name": "filterous",
-  "version": "2.0.1-beta",
+  "version": "2.1.0-beta",
   "description": "Instagram-like photo manipulation library for Node.js and Javascript on browser",
   "main": "lib/index.js",
   "directories": {
@@ -26,6 +26,6 @@
     "mocha": "^3.2.0"
   },
   "dependencies": {
-    "canvas": "^1.6.2"
+    "canvas": "^2.10.1"
   }
 }
